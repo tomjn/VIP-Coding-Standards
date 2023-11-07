@@ -117,7 +117,7 @@ jobs:
         if: ${{ matrix.dependencies == 'dev' }}
         run: >
           composer require --no-update --no-scripts --no-interaction
-          squizlabs/php_codesniffer:"dev-master"
+          phpcsstandards/php_codesniffer:"dev-master"
           phpcsstandards/phpcsutils:"dev-develop"
           phpcsstandards/phpcsextra:"dev-develop"
           sirbrillig/phpcs-variable-analysis:"2.x"
@@ -145,7 +145,7 @@ jobs:
         if: ${{ ! startsWith( matrix.php, '8' ) && matrix.dependencies == 'lowest' }}
         run: >
           composer update --prefer-lowest --no-scripts --no-interaction
-          squizlabs/php_codesniffer
+          phpcsstandards/php_codesniffer
           phpcsstandards/phpcsutils
           phpcsstandards/phpcsextra
           sirbrillig/phpcs-variable-analysis
@@ -155,7 +155,7 @@ jobs:
         if: ${{ startsWith( matrix.php, '8' ) && matrix.dependencies == 'lowest' }}
         run: >
           composer update --prefer-lowest --no-scripts --no-interaction --ignore-platform-req=php+
-          squizlabs/php_codesniffer
+          phpcsstandards/php_codesniffer
           phpcsstandards/phpcsutils
           phpcsstandards/phpcsextra
           sirbrillig/phpcs-variable-analysis

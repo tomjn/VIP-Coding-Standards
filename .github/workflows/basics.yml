@@ -50,7 +50,7 @@ jobs:
 
       - name: 'Composer: adjust dependencies'
         # Using PHPCS `master` as an early detection system for bugs upstream.
-        run: composer require --no-update --no-scripts squizlabs/php_codesniffer:"dev-master" --no-interaction
+        run: composer require --no-update --no-scripts phpcsstandards/php_codesniffer:"dev-master" --no-interaction
 
       # Install dependencies and handle caching in one go.
       # @link https://github.com/marketplace/actions/install-php-dependencies-with-composer

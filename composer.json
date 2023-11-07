@@ -20,7 +20,7 @@
 		"phpcsstandards/phpcsextra": "^1.1.0",
 		"phpcsstandards/phpcsutils": "^1.0.8",
 		"sirbrillig/phpcs-variable-analysis": "^2.11.17",
-		"squizlabs/php_codesniffer": "^3.7.2",
+		"phpcsstandards/php_codesniffer": "^3.7.2",
 		"wp-coding-standards/wpcs": "^3.0"
 	},
 	"require-dev": {
@@ -41,7 +41,7 @@
 			"bin/php-lint",
 			"bin/xml-lint"
 		],
-		"cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+		"cs": "@php ./vendor/phpcsstandards/php_codesniffer/bin/phpcs",
 		"test": "bin/unit-tests",
 		"test-coverage": "bin/unit-tests-coverage",
 		"feature-completeness": [

@@ -21,7 +21,7 @@ $ds = DIRECTORY_SEPARATOR;
 
 // Get the PHPCS dir from an environment variable.
 $phpcsDir          = getenv( 'PHPCS_DIR' );
-$composerPHPCSPath = dirname( __DIR__ ) . $ds . 'vendor' . $ds . 'squizlabs' . $ds . 'php_codesniffer';
+$composerPHPCSPath = dirname( __DIR__ ) . $ds . 'vendor' . $ds . 'phpcsstandards' . $ds . 'php_codesniffer';
 
 // This may be a Composer install.
 if ( $phpcsDir === false && is_dir( $composerPHPCSPath ) ) {
