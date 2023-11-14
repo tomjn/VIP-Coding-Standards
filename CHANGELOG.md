@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.1] - 2023-11-xx
+
+Props: @GaryJones, @jrfnl
+
+### Changed
+
+- Switched to the new canonical fork of [PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer).
+- Composer:
+    * [#??](https://github.com/Automattic/VIP-Coding-Standards/pull/??): Up the minimum PHPCS version to 3.8.0.
+    * [#??](https://github.com/Automattic/VIP-Coding-Standards/pull/??): Up the minimum PHPCSUtils version to 1.0.9.
+    * [#??](https://github.com/Automattic/VIP-Coding-Standards/pull/??): Up the minimum PHPCSExtra version to 1.2.1.
+    * [#??](https://github.com/Automattic/VIP-Coding-Standards/pull/??): Up the minimum WordPressCS version to 3.0.2.
+
+    Please ensure you run `composer update automattic/vipwpcs --with-dependencies` to benefit from this.
+
 ## [3.0.0] - 2023-09-05
 
 Props: @GaryJones, @jrfnl
@@ -674,6 +689,7 @@ Initial release.
 
 Props: david-binda, pkevan.
 
+[3.0.1]: https://github.com/Automattic/VIP-Coding-Standards/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/Automattic/VIP-Coding-Standards/compare/2.3.4...3.0.0
 [2.3.4]: https://github.com/Automattic/VIP-Coding-Standards/compare/2.3.3...2.3.4
 [2.3.3]: https://github.com/Automattic/VIP-Coding-Standards/compare/2.3.2...2.3.3
